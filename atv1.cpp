@@ -28,7 +28,7 @@ int carregaDados(Dados R[]){
 	if (arquivo.is_open()){
 		while (getline (arquivo,linha)){
 		  cout << linha << '\n';
-		  string S[5];
+		  string S[100];
 		  split(linha, ';', S);
 		  R[i].nome = S[0];
 		  R[i].telefone = S[1];
@@ -52,10 +52,27 @@ void salvaDados(Dados R[], int quant){
 	arquivo.close();
 }
 
+void insereDados()
+{
+    string novoNome;
+    string novocpf;
+    string novotelefone;
+    ofstream arquivo;
+    arquivo.open("agenda.csv", ios::app);
+    cout << "Digite o nome: " << endl;
+    cin >> novoNome;
+    cout << "Digite o cpf: " << endl;
+    cin >> novocpf;
+    cout << "Digite o telefone: " << endl;
+    cin >> novotelefone;
+    arquivo << novoNome << ";" << novocpf << ";" << novotelefone << endl;
+    arquivo.close();
+}
 int main() {
 	Dados R[100];
 	int q = carregaDados(R);
 	salvaDados(R, q);
+    insereDados();
 	return 0;
 }
 
