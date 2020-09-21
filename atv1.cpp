@@ -68,7 +68,7 @@ int carregaDados(dados R[])
         {
             /* code */
             
-            cout << linha << endl;
+            cout << linha << '\n';
             string S[2];
             split(linha, ';' , S);
             R[i].nome = S[0];
@@ -79,15 +79,14 @@ int carregaDados(dados R[])
         arquivo.close();
         return i;
         
-    }else
-    { 
+    } else { 
         cout<<"Nao foi possivel abrir o arquivo"<<endl;
         return 0;
     }
 
 }
 
-void salvaDados( dados R[], int quant)
+void salvaDados(dados R[], int quant)
 {
     ofstream arquivo;
     arquivo.open("agenda.csv", ios::trunc);
