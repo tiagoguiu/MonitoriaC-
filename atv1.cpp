@@ -45,12 +45,13 @@ void split(string linha, char at, string S[])
     {
         /* code */
         fim = linha.find(at, pos);
-        if( fim == -1) // ultimo campo
+        if(fim == -1) // ultimo campo
             S[i] = linha.substr(pos);
         else  // primeiro ao penultimo campo
             S[i++] = linha.substr(pos, fim - pos);
+
         pos = fim + 1;
-    } while ( fim != -1);
+    } while (fim != -1);
     
 }
 
@@ -69,7 +70,7 @@ int carregaDados(dados R[])
             
             cout << linha << endl;
             string S[2];
-            split(linha, ',' , S);
+            split(linha, ';' , S);
             R[i].nome = S[0];
             R[i].cpf = S[1];
             R[i].telefone = S[2];
@@ -93,7 +94,7 @@ void salvaDados( dados R[], int quant)
     for (int i = 0; i < quant; i++)
     {
         /* code */
-        arquivo << R[i].nome << "," << R[i].cpf << "," << R[i].telefone << endl;
+        arquivo << R[i].nome << ";" << R[i].cpf << ";" << R[i].telefone << endl;
     }
     arquivo.close();
      
