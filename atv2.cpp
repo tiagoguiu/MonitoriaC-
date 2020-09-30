@@ -75,8 +75,22 @@ void insere(vector<Biblioteca> &R)
 
 void remove(vector<Biblioteca> &R)
 {
-    R.erase(R.begin());
-    cout << "O primeiro da lista foi apagado" << endl;
+    for (int i = 0; i < R.size(); i++)
+    {
+        /* code */
+        cout << "imprimindo lista para ver se o primeiro elemento foi excluido" << endl << R[i].autor << endl << R[i].titulo << endl << R[i].quantidade << endl;
+    }
+    
+    vector<Biblioteca>::iterator it;
+    it=R.begin();
+    R.erase(it+1); // teria que passar o iterator
+    //cout << "O primeiro da lista foi apagado" << endl;
+
+    for (int i = 0; i < R.size(); i++)
+    {
+        /* code */
+        cout << "Confira se foi excluido" << endl << R[i].autor << endl << R[i].titulo << endl << R[i].quantidade << endl;
+    }
 }
 
 
