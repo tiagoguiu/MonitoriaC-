@@ -7,19 +7,19 @@
 Conteudos
 =========
 <!--ts-->
-    Funções em c++
-    #Structures
-    *[Manipulação de arquivos CSV]
-    *[Listas]
-    *[Filas]
-    *[Pilha]
-    *[Ordenação e inserção]
-    *[Quicksort]
-    *[Mergesort]
-    *[Heapsort]
-    *[Pesquisa sequencial]
-    *[Arvore binaria]
-    *[Ponteiros]
-    *[Complexidade de algoritimos]
+    -Funções em c++
+    -Structures
+    -Manipulação de arquivos CSV
+    -Listas
+    -Filas
+    -Pilha
+    -Ordenação e inserção
+    -Quicksort
+    -Mergesort
+    -Heapsort
+    -Pesquisa sequencial
+    -Arvore binaria
+    -Ponteiros
+    -Complexidade de algoritimos
 <!--te-->
     
