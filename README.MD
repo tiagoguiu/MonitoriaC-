@@ -7,8 +7,8 @@
 Conteudos
 =========
 <!--ts-->
-    *[Funções em c++]
-    *[Structures]
+    Funções em c++
+    Structures
     *[Manipulação de arquivos CSV]
     *[Listas]
     *[Filas]
