@@ -8,7 +8,7 @@ Conteudos
 =========
 <!--ts-->
     Funções em c++
-    Structures
+    #Structures
     *[Manipulação de arquivos CSV]
     *[Listas]
     *[Filas]
