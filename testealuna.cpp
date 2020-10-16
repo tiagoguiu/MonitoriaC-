@@ -49,7 +49,7 @@ int main() {
     int w=4;
     vector<ItemCompra> X;
     carregaRegistros(X);
-    int excluir;
+    
 
     while (w!=0) {
         cout << "Digite 1 para imprimir sua lista na tela, 2 para adicionar um item na lista, 3 para excluir um item e 0 para sair." << endl;
@@ -64,13 +64,14 @@ int main() {
             salvaRegistros(X);
         }
         if (w==3) {
+            int excluir = 0;
             cout << "Digite a posicao do item a ser excluido: " << endl;
             cin >> excluir;
             
 
             for (vector<ItemCompra>::iterator it; it != X.end(); it++) {
                 if (excluir == 1) {
-                    X.erase(it);
+                    X.erase(X.begin());
                 }
                 else
                 {
