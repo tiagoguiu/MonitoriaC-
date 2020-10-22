@@ -91,7 +91,7 @@ int main()
     }
     quickSort(V,0,9);
     cout << "A lista ordenada" << endl;
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < V.size(); i++)
     {
         cout << V[i] << endl;
     }
